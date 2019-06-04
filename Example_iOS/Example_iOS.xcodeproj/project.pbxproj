@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C3E8B72A22A71E7200870A36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E8B72922A71E7200870A36 /* AppDelegate.swift */; };
-		C3E8B73122A71E7200870A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B72F22A71E7200870A36 /* Main.storyboard */; };
 		C3E8B73322A71E7500870A36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B73222A71E7500870A36 /* Assets.xcassets */; };
 		C3E8B73622A71E7500870A36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B73422A71E7500870A36 /* LaunchScreen.storyboard */; };
 		C3E8B79922A7241500870A36 /* DynamicTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B78E22A7241500870A36 /* DynamicTypeView.xib */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		C3E8B72622A71E7200870A36 /* Example_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3E8B72922A71E7200870A36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C3E8B73022A71E7200870A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3E8B73222A71E7500870A36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3E8B73522A71E7500870A36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3E8B73722A71E7500870A36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,10 +100,8 @@
 		C3E8B72822A71E7200870A36 /* Example_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C3E8B72F22A71E7200870A36 /* Main.storyboard */,
-				C3E8B73422A71E7500870A36 /* LaunchScreen.storyboard */,
-				C3E8B7A122A7241A00870A36 /* Helpers */,
 				C3E8B75022A7239800870A36 /* Example Views */,
+				C3E8B7A122A7241A00870A36 /* Helpers */,
 				C3E8B7A422A7244C00870A36 /* Unrelated Files */,
 			);
 			path = Example_iOS;
@@ -176,6 +172,7 @@
 		C3E8B7A422A7244C00870A36 /* Unrelated Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3E8B73422A71E7500870A36 /* LaunchScreen.storyboard */,
 				C3E8B72922A71E7200870A36 /* AppDelegate.swift */,
 				C3E8B73222A71E7500870A36 /* Assets.xcassets */,
 				C3E8B73722A71E7500870A36 /* Info.plist */,
@@ -190,9 +187,17 @@
 				C3E8B7B722A7257500870A36 /* CustomTableViewHeaderViewSnapshotTests.swift */,
 				C3E8B7B822A7257500870A36 /* DynamicTypeViewSnapshotTests.swift */,
 				C3E8B7B522A7257500870A36 /* PixelTestExampleSnapshotTests.swift */,
-				C3E8B7AD22A7253B00870A36 /* Info.plist */,
+				C3E8B7BD22A72FE100870A36 /* Supporting Files */,
 			);
 			path = Example_iOSSnapshotTests;
+			sourceTree = "<group>";
+		};
+		C3E8B7BD22A72FE100870A36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3E8B7AD22A7253B00870A36 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +293,6 @@
 				C3E8B79922A7241500870A36 /* DynamicTypeView.xib in Resources */,
 				C3E8B7A022A7241600870A36 /* SimpleView.xib in Resources */,
 				C3E8B79B22A7241500870A36 /* CustomTableViewCell.xib in Resources */,
-				C3E8B73122A71E7200870A36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,14 +341,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C3E8B72F22A71E7200870A36 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3E8B73022A71E7200870A36 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C3E8B73422A71E7500870A36 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,7 +509,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BCL7VAFF4;
-				INFOPLIST_FILE = Example_iOSSnapshotTests/Info.plist;
+				INFOPLIST_FILE = "Example_iOSSnapshotTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +531,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BCL7VAFF4;
-				INFOPLIST_FILE = Example_iOSSnapshotTests/Info.plist;
+				INFOPLIST_FILE = "Example_iOSSnapshotTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
