@@ -1,9 +1,6 @@
 # PixelTest
 
 [![CI Status](http://img.shields.io/travis/KaneCheshire/PixelTest.svg?style=flat)](https://travis-ci.org/KaneCheshire/PixelTest)
-[![Version](https://img.shields.io/cocoapods/v/PixelTest.svg?style=flat)](http://cocoapods.org/pods/PixelTest)
-[![License](https://img.shields.io/cocoapods/l/PixelTest.svg?style=flat)](http://cocoapods.org/pods/PixelTest)
-[![Platform](https://img.shields.io/cocoapods/p/PixelTest.svg?style=flat)](http://cocoapods.org/pods/PixelTest)
 
 - [Key features](#key-features)
 - [Why snapshot test](#why-snapshot-test)
@@ -43,19 +40,7 @@ Logic is covered with unit tests, behaviour with automation/UI tests, and snapsh
 
 ## Installation
 
-PixelTest is available on Cocoapods.
-
-Add PixelTest to a **test target** in your `Podfile`:
-
-```ruby
-target 'YourAppTarget' do
-  target 'YourAppTestTarget' do
-    pod 'PixelTest'
-  end
-end
-```
-
-Then navigate to where your `Podfile` is located in Terminal and run `pod update`.
+PixelTest is available as a Swift Package and can be added as a depedency in Xcode 11.
 
 ## Quick start
 
