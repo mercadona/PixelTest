@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Coordinates manipulating files.
 struct FileCoordinator: FileCoordinatorType {

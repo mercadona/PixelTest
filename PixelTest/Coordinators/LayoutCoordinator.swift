@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Coordinates laying out a view.
 struct LayoutCoordinator: LayoutCoordinatorType {

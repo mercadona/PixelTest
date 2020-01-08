@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Coordinates recording.
 struct RecordCoordinator: RecordCoordinatorType {

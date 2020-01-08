@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 /// Represents a layout style for verifying a view.
 ///
